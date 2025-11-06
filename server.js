@@ -6,7 +6,9 @@ const port = 3000;
 const db = require("./config/db");
 
 // Import delle rotte
-const postRoutes = require("./data/controllers/routes/postRoutes");
+
+const postRoutes = require("./routes/postRoutes");
+app.use("/posts", postRoutes);
 
 // Middleware per leggere JSON
 app.use(express.json());

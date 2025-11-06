@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const postController = require("../postcontrollers");
+
+const postController = require("../controllers/postController");
+
 
 
 
@@ -12,19 +14,19 @@ const postController = require("../postcontrollers");
 router.get("/", postController.index);
 
 // show → GET singolo post
-router.get("/:id", postController.show);
+//router.get("/:id", postController.show);
 
 // store → POST nuovo post
-router.post("/", postController.store);
+//router.post("/", postController.store);
 
 // update → PUT modifica completa
-router.put("/:id", postController.update);
+//router.put("/:id", postController.update);
 
 // modify → PATCH modifica parziale
-router.patch("/:id", postController.modify);
+//router.patch("/:id", postController.modify);
 
 // destroy → DELETE elimina post
-router.delete("/:id", postController.destroy);
+//router.delete("/:id", postController.destroy);
 
-module.exports = router;                                 
+module.exports = router;
 

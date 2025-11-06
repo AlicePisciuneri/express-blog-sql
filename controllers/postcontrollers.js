@@ -1,4 +1,4 @@
-const post = require("../post").default;
+const post = require("../data/post").default;
 
 // GET /posts → tutti i post (con filtro opzionale per tags)
 const index = (req, res) => {

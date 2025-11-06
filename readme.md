@@ -41,4 +41,10 @@ Risultato in console:
 Connessione al database riuscita!
 Server acceso su http://localhost:3000
 
+### Milestone 2 — API Index
+- Implementata rotta GET /posts
+- Query SQL: SELECT * FROM posts
+- Restituisce tutti i post in formato JSON
+- Testata su **Postman**, risultati corretti !!!!!!!!!!!! NON CI CREDO!!!!!!!!!!!!!!!
+
 
