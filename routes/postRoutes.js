@@ -25,8 +25,9 @@ router.get("/", postController.index);
 // modify → PATCH modifica parziale
 //router.patch("/:id", postController.modify);
 
-// destroy → DELETE elimina post
-//router.delete("/:id", postController.destroy);
+//destroy → DELETE elimina post
+router.delete("/:id", postController.destroy);
+
 
 module.exports = router;
 

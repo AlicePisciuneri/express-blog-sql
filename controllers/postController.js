@@ -20,4 +20,20 @@ function index(req, res) {
         res.json(results);
     });
 }
-module.exports = { index }; //esporto la funzione per usarla altrove
+
+//funzione che elimina un post dal databse
+function destroy(req, res) {
+    const id = req.params.id;
+    const sql = "DELETE FROM posts WHERE id = ? ";
+    db.query(sql, [id], (err, results) => {
+        if (err) {
+            console.error("errore nella query", err);
+            return;
+        }
+
+
+        res.status(204).send();
+    });
+}
+
+module.exports = { index, destroy }; //esporto la funzione per usarla altrove

@@ -47,4 +47,11 @@ Server acceso su http://localhost:3000
 - Restituisce tutti i post in formato JSON
 - Testata su **Postman**, risultati corretti !!!!!!!!!!!! NON CI CREDO!!!!!!!!!!!!!!!
 
+###  Milestone 3 — API Destroy
+- Implementata la rotta DELETE /posts/:id
+- La rotta permette di eliminare un post dal database
+- Testata con Postman → restituisce **Status 204 No Content**
+- Verificato su MySQL Workbench che il post venga effettivamente rimosso.
+
+
 
